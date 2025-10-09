@@ -17,10 +17,19 @@ from typing import List, Dict, Any, Optional
 import uuid
 import time
 import json
-
+from fastapi.middleware.cors import CORSMiddleware
 # Lazy imports for heavy dependencies (done inside endpoints) to keep module import lightweight
 
 app = FastAPI(title="MARS Research Assistant API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173","https://www.agilityaiinvoicely.com"],
+    allow_origin_regex=r"^https?://localhost:\d{4}$",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # In-memory session store: {session_id: [ {role: 'user'|'assistant'|'system', 'content': str}, ... ] }
 SESSIONS: Dict[str, List[Dict[str, str]]] = {}
