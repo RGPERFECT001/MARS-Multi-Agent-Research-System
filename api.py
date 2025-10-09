@@ -242,6 +242,9 @@ async def status():
     from gemini_client import gemini_client
     return gemini_client.get_model_status()
 
+@app.get("/")
+def root():
+    return {"message": "MARS Research Assistant API is running."}
 
 # Simple uvicorn runner convenience
 if __name__ == "__main__":
