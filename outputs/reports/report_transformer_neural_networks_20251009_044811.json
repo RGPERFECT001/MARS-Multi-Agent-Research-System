@@ -1,0 +1,6 @@
+{
+  "user_topic": "transformer neural networks",
+  "final_report": "Error generating research report: 'AgentState' object has no attribute 'update'",
+  "error": "'AgentState' object has no attribute 'update'",
+  "workflow_status": "failed"
+}

@@ -1,0 +1,647 @@
+2025-10-09 04:41:56,649 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:41:56,649 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 04:41:56,649 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:41:56,649 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 04:41:56,649 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 04:41:56,649 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 04:41:56,649 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 04:41:56,665 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 04:41:56,688 - workflow - INFO - Executing planner node
+2025-10-09 04:41:56,688 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 04:41:56,688 - gemini_client - INFO - Using model: gemini-1.5-pro
+2025-10-09 04:41:57,589 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2025-10-09 04:41:59,774 - gemini_client - ERROR - Error with model gemini-1.5-pro: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-09 04:41:59,774 - gemini_client - INFO - Switching from failed model gemini-1.5-pro
+2025-10-09 04:42:03,467 - __main__ - INFO - Research workflow interrupted by user
+2025-10-09 04:47:57,786 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:47:57,786 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 04:47:57,786 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:47:57,786 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 04:47:57,786 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 04:47:57,786 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 04:47:57,786 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 04:47:57,794 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 04:47:57,801 - workflow - INFO - Executing planner node
+2025-10-09 04:47:57,801 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 04:47:57,802 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:48:11,300 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:48:11,300 - agents.planner_agent - ERROR - CS/IT Planner Agent failed to parse JSON response: Expecting value: line 1 column 1 (char 0)
+2025-10-09 04:48:11,300 - agents.planner_agent - WARNING - CS/IT Planner Agent using fallback research plan for topic: transformer neural networks
+2025-10-09 04:48:11,302 - workflow - ERROR - Error running research workflow: 'AgentState' object has no attribute 'update'
+2025-10-09 04:48:11,304 - __main__ - INFO - Report saved to: outputs/reports\report_transformer_neural_networks_20251009_044811.json
+2025-10-09 04:53:37,539 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:53:37,539 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 04:53:37,540 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:53:37,540 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 04:53:37,540 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 04:53:37,540 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 04:53:37,540 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 04:53:37,548 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 04:53:37,557 - workflow - INFO - Executing planner node
+2025-10-09 04:53:37,557 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 04:53:37,557 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:53:50,928 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:53:50,929 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 5 main questions
+2025-10-09 04:53:50,945 - workflow - INFO - Executing researcher node
+2025-10-09 04:53:50,945 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 04:53:50,946 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 04:53:50,946 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 04:53:50,947 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 04:53:52,328 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 04:53:52,331 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 04:53:52,331 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 04:53:53,164 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 04:53:53,167 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 04:53:53,167 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 04:53:53,167 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 04:53:53,167 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 04:54:03,593 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 04:54:04,261 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 04:54:04,262 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 04:54:04,262 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 04:54:04,789 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 04:54:04,792 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 04:54:04,792 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 04:54:04,793 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 04:54:04,793 - agents.researcher_agent - ERROR - CS/IT Researcher Agent failed to synthesize real data: Object of type datetime is not JSON serializable
+2025-10-09 04:54:04,793 - agents.researcher_agent - WARNING - CS/IT Researcher Agent using fallback synthesized data for topic: transformer neural networks
+2025-10-09 04:54:04,794 - workflow - INFO - Executing writer node
+2025-10-09 04:54:04,794 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 04:54:04,795 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:55:05,969 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:55:05,971 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (34290 characters)
+2025-10-09 04:55:05,971 - workflow - INFO - Executing critic node
+2025-10-09 04:55:05,972 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 04:55:05,972 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:55:28,956 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:55:28,959 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 04:55:28,960 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 04:55:28,960 - workflow - INFO - Making critic decision
+2025-10-09 04:55:28,960 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 04:55:28,960 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 04:55:28,961 - workflow - INFO - Executing writer node
+2025-10-09 04:55:28,961 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 04:55:28,962 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:56:41,656 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:56:41,657 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (41712 characters)
+2025-10-09 04:56:41,658 - workflow - INFO - Executing critic node
+2025-10-09 04:56:41,658 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 04:56:41,658 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:56:58,410 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:56:58,410 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 04:56:58,410 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 04:56:58,411 - workflow - INFO - Making critic decision
+2025-10-09 04:56:58,411 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 04:56:58,411 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 04:56:58,412 - workflow - INFO - Executing writer node
+2025-10-09 04:56:58,412 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 04:56:58,413 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:57:50,340 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:57:50,342 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (33659 characters)
+2025-10-09 04:57:50,353 - workflow - INFO - Executing critic node
+2025-10-09 04:57:50,356 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 04:57:50,361 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:58:07,537 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:58:07,538 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 04:58:07,538 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 04:58:07,538 - workflow - INFO - Making critic decision
+2025-10-09 04:58:07,538 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 04:58:07,538 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 04:58:07,540 - workflow - INFO - Executing writer node
+2025-10-09 04:58:07,540 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 04:58:07,540 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:59:12,591 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:59:12,591 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (34643 characters)
+2025-10-09 04:59:12,591 - workflow - INFO - Executing critic node
+2025-10-09 04:59:12,591 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 04:59:12,591 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 04:59:29,435 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 04:59:29,435 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 04:59:29,436 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 04:59:29,436 - workflow - INFO - Making critic decision
+2025-10-09 04:59:29,436 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 04:59:29,436 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 04:59:29,437 - workflow - INFO - Executing writer node
+2025-10-09 04:59:29,437 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 04:59:29,437 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:00:38,996 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:00:38,997 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (32514 characters)
+2025-10-09 05:00:38,997 - workflow - INFO - Executing critic node
+2025-10-09 05:00:38,998 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:00:38,998 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:00:59,524 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:00:59,525 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:00:59,525 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:00:59,525 - workflow - INFO - Making critic decision
+2025-10-09 05:00:59,525 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:00:59,525 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:00:59,527 - workflow - INFO - Executing writer node
+2025-10-09 05:00:59,527 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:00:59,527 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:02:04,786 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:02:04,786 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (35811 characters)
+2025-10-09 05:02:04,787 - workflow - INFO - Executing critic node
+2025-10-09 05:02:04,787 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:02:04,787 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:02:24,198 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:02:24,198 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='REVISION_NEEDED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:02:24,199 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:02:24,199 - workflow - INFO - Making critic decision
+2025-10-09 05:02:24,199 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:02:24,199 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:02:24,200 - workflow - INFO - Executing writer node
+2025-10-09 05:02:24,200 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:02:24,200 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:03:24,785 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:03:24,786 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (33519 characters)
+2025-10-09 05:03:24,788 - workflow - INFO - Executing critic node
+2025-10-09 05:03:24,788 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:03:24,789 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:03:46,229 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:03:46,229 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:03:46,230 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:03:46,230 - workflow - INFO - Making critic decision
+2025-10-09 05:03:46,230 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:03:46,230 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:03:46,231 - workflow - INFO - Executing writer node
+2025-10-09 05:03:46,231 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:03:46,232 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:04:59,400 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:04:59,400 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (41861 characters)
+2025-10-09 05:04:59,401 - workflow - INFO - Executing critic node
+2025-10-09 05:04:59,401 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:04:59,401 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:05:19,214 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:05:19,214 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:05:19,216 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:05:19,216 - workflow - INFO - Making critic decision
+2025-10-09 05:05:19,216 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:05:19,216 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:05:19,216 - workflow - INFO - Executing writer node
+2025-10-09 05:05:19,217 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:05:19,217 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:06:11,759 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:06:11,761 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (30964 characters)
+2025-10-09 05:06:11,766 - workflow - INFO - Executing critic node
+2025-10-09 05:06:11,766 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:06:11,771 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:06:31,672 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:06:31,673 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:06:31,673 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:06:31,673 - workflow - INFO - Making critic decision
+2025-10-09 05:06:31,673 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:06:31,673 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:06:31,674 - workflow - INFO - Executing writer node
+2025-10-09 05:06:31,674 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:06:31,674 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:07:39,527 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:07:39,527 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (40240 characters)
+2025-10-09 05:07:39,528 - workflow - INFO - Executing critic node
+2025-10-09 05:07:39,528 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:07:39,528 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:08:02,347 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:08:02,347 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='REVISION_NEEDED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:08:02,348 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:08:02,348 - workflow - INFO - Making critic decision
+2025-10-09 05:08:02,348 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:08:02,348 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:08:02,349 - workflow - INFO - Executing writer node
+2025-10-09 05:08:02,349 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:08:02,349 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:09:12,697 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:09:12,697 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (44534 characters)
+2025-10-09 05:09:12,698 - workflow - INFO - Executing critic node
+2025-10-09 05:09:12,698 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:09:12,699 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:09:33,613 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:09:33,613 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='REVISION_NEEDED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:09:33,614 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:09:33,614 - workflow - INFO - Making critic decision
+2025-10-09 05:09:33,614 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:09:33,614 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:09:33,615 - workflow - INFO - Executing writer node
+2025-10-09 05:09:33,615 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:09:33,615 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:10:55,578 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:10:55,578 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (48394 characters)
+2025-10-09 05:10:55,579 - workflow - ERROR - Error running research workflow: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-10-09 05:10:55,585 - __main__ - INFO - Report saved to: outputs/reports\report_transformer_neural_networks_20251009_051055.json
+2025-10-09 05:19:10,261 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:19:10,261 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 05:19:10,262 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:19:10,262 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 05:19:10,262 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 05:19:10,262 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 05:19:10,262 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 05:19:10,263 - __main__ - ERROR - Error running research workflow: StateGraph.compile() got an unexpected keyword argument 'recursion_limit'
+2025-10-09 05:40:34,582 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:40:34,584 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 05:40:34,584 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:40:34,584 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 05:40:34,584 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 05:40:34,585 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 05:40:34,585 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 05:40:34,604 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 05:40:34,630 - workflow - INFO - Executing planner node
+2025-10-09 05:40:34,632 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 05:40:34,633 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:40:47,340 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:40:47,340 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 5 main questions
+2025-10-09 05:40:47,340 - workflow - INFO - Executing researcher node
+2025-10-09 05:40:47,340 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:40:47,340 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:40:47,340 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:40:47,340 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:40:48,214 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:40:48,220 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:40:48,220 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:40:49,155 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:40:49,157 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:40:49,157 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:40:49,158 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:40:49,158 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:40:58,008 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:40:58,671 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:40:58,671 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:40:58,672 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:40:59,209 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:40:59,209 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:40:59,209 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:40:59,209 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:40:59,209 - agents.researcher_agent - ERROR - CS/IT Researcher Agent failed to synthesize real data: Object of type datetime is not JSON serializable
+2025-10-09 05:40:59,209 - agents.researcher_agent - WARNING - CS/IT Researcher Agent using fallback synthesized data for topic: transformer neural networks
+2025-10-09 05:40:59,212 - workflow - INFO - Executing writer node
+2025-10-09 05:40:59,212 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:40:59,213 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:42:08,333 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:42:08,335 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (40598 characters)
+2025-10-09 05:42:08,335 - workflow - INFO - Executing critic node
+2025-10-09 05:42:08,335 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:42:08,335 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:42:30,587 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:42:30,590 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='REVISION_NEEDED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:42:30,590 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:42:30,590 - workflow - INFO - Making critic decision
+2025-10-09 05:42:30,590 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:42:30,590 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:42:30,592 - workflow - INFO - Executing writer node
+2025-10-09 05:42:30,592 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:42:30,592 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:43:38,011 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:43:38,011 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (35602 characters)
+2025-10-09 05:43:38,015 - workflow - INFO - Executing critic node
+2025-10-09 05:43:38,015 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:43:38,016 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:43:52,482 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:43:52,482 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:43:52,482 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:43:52,483 - workflow - INFO - Making critic decision
+2025-10-09 05:43:52,483 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:43:52,483 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:43:52,484 - workflow - INFO - Executing writer node
+2025-10-09 05:43:52,485 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:43:52,485 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:45:00,245 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:45:00,248 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (39812 characters)
+2025-10-09 05:45:00,248 - workflow - INFO - Executing critic node
+2025-10-09 05:45:00,248 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:45:00,248 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:45:17,201 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:45:17,201 - agents.critic_agent - ERROR - Critic Agent failed to critique report: 1 validation error for CritiqueResult
+overall_assessment
+  Input should be 'approved', 'revision_needed' or 'research_insufficient' [type=literal_error, input_value='APPROVED', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+2025-10-09 05:45:17,201 - agents.critic_agent - WARNING - Critic Agent using fallback critique for topic: transformer neural networks
+2025-10-09 05:45:17,202 - workflow - INFO - Making critic decision
+2025-10-09 05:45:17,202 - agents.critic_agent - ERROR - Critic Agent cannot determine workflow continuation - no approval status
+2025-10-09 05:45:17,202 - workflow - INFO - Critic decision: revision_needed
+2025-10-09 05:45:17,203 - workflow - INFO - Executing writer node
+2025-10-09 05:45:17,203 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:45:17,204 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:46:06,645 - __main__ - INFO - Research workflow interrupted by user
+2025-10-09 05:48:19,295 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:48:19,295 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 05:48:19,295 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:48:19,295 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 05:48:19,295 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 05:48:19,295 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 05:48:19,295 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 05:48:19,303 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 05:48:19,315 - workflow - INFO - Executing planner node
+2025-10-09 05:48:19,316 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 05:48:19,316 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:48:31,494 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:48:31,494 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 5 main questions
+2025-10-09 05:48:31,496 - workflow - INFO - Executing researcher node
+2025-10-09 05:48:31,496 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:48:31,496 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:48:31,496 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:48:31,496 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:48:32,085 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:48:32,091 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:48:32,091 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:48:32,881 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:48:32,885 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:48:32,939 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:48:32,939 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:48:32,939 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:48:43,151 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:48:44,406 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:48:44,406 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:48:44,406 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:48:44,917 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:48:44,920 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:48:44,920 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:48:44,920 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:48:44,921 - agents.researcher_agent - ERROR - CS/IT Researcher Agent failed to synthesize real data: Object of type datetime is not JSON serializable
+2025-10-09 05:48:44,921 - agents.researcher_agent - WARNING - CS/IT Researcher Agent using fallback synthesized data for topic: transformer neural networks
+2025-10-09 05:48:44,922 - workflow - INFO - Executing writer node
+2025-10-09 05:48:44,922 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:48:44,922 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:49:52,382 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:49:52,384 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (38003 characters)
+2025-10-09 05:49:52,385 - workflow - INFO - Executing critic node
+2025-10-09 05:49:52,385 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:49:52,385 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:50:07,426 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:50:07,426 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: approved
+2025-10-09 05:50:07,427 - workflow - INFO - Making critic decision
+2025-10-09 05:50:07,427 - agents.critic_agent - INFO - Critic Agent workflow decision: approved
+2025-10-09 05:50:07,428 - workflow - INFO - Critic decision: approved
+2025-10-09 05:50:07,428 - workflow - INFO - Research workflow completed successfully
+2025-10-09 05:50:07,493 - __main__ - INFO - Report saved to: outputs/reports\report_transformer_neural_networks_20251009_055007.json
+2025-10-09 05:51:17,801 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:51:17,801 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 05:51:17,801 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:51:17,801 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 05:51:17,801 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 05:51:17,801 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 05:51:17,802 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 05:51:17,808 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 05:51:17,816 - workflow - INFO - Executing planner node
+2025-10-09 05:51:17,816 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 05:51:17,816 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:51:30,907 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:51:30,907 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 5 main questions
+2025-10-09 05:51:30,907 - workflow - INFO - Executing researcher node
+2025-10-09 05:51:30,907 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:51:30,907 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:51:30,907 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:51:30,907 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:51:31,426 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:51:31,431 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:51:31,431 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:51:32,203 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:51:32,203 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:51:32,203 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:51:32,203 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:51:32,203 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:51:41,163 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:51:42,403 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:51:42,403 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:51:42,403 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:51:42,910 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:51:42,910 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:51:42,910 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:51:42,910 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:51:42,910 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:52:03,248 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:52:03,248 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 4 key findings
+2025-10-09 05:52:03,249 - workflow - INFO - Executing writer node
+2025-10-09 05:52:03,249 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:52:03,250 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:52:49,995 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:52:49,995 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (25608 characters)
+2025-10-09 05:52:49,995 - workflow - INFO - Executing critic node
+2025-10-09 05:52:49,995 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:52:49,995 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:53:12,155 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:53:12,156 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-10-09 05:53:12,156 - workflow - INFO - Making critic decision
+2025-10-09 05:53:12,156 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-10-09 05:53:12,158 - workflow - INFO - Critic decision: research_insufficient
+2025-10-09 05:53:12,158 - workflow - INFO - Executing researcher node
+2025-10-09 05:53:12,158 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:53:12,159 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:53:12,159 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:53:12,159 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:53:12,763 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:53:12,767 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:53:12,767 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:53:13,565 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:53:13,565 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:53:13,565 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:53:13,565 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:53:13,565 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:53:21,806 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:53:22,455 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:53:22,455 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:53:22,455 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:53:23,015 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:53:23,015 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:53:23,015 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:53:23,015 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:53:23,015 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:53:52,850 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:53:52,850 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 4 key findings
+2025-10-09 05:53:52,851 - workflow - INFO - Executing writer node
+2025-10-09 05:53:52,851 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:53:52,851 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:54:47,526 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:54:47,526 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (35476 characters)
+2025-10-09 05:54:47,531 - workflow - INFO - Executing critic node
+2025-10-09 05:54:47,531 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:54:47,531 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:55:19,006 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:55:19,007 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-10-09 05:55:19,008 - workflow - INFO - Making critic decision
+2025-10-09 05:55:19,008 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-10-09 05:55:19,008 - workflow - INFO - Critic decision: research_insufficient
+2025-10-09 05:55:19,009 - workflow - INFO - Executing researcher node
+2025-10-09 05:55:19,009 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:55:19,009 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:55:19,009 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:55:19,010 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:55:20,269 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:55:20,269 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:55:20,269 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:55:21,091 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:55:21,092 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:55:21,093 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:55:21,093 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:55:21,093 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:55:29,851 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:55:30,505 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:55:30,505 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:55:30,505 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:55:31,009 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:55:31,011 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:55:31,012 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:55:31,012 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:55:31,012 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:55:52,066 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:55:52,066 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 4 key findings
+2025-10-09 05:55:52,067 - workflow - INFO - Executing writer node
+2025-10-09 05:55:52,067 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:55:52,068 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:56:51,187 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:56:51,187 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (32940 characters)
+2025-10-09 05:56:51,188 - workflow - INFO - Executing critic node
+2025-10-09 05:56:51,188 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:56:51,189 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:57:15,456 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:57:15,456 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-10-09 05:57:15,457 - workflow - INFO - Making critic decision
+2025-10-09 05:57:15,457 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-10-09 05:57:15,457 - workflow - INFO - Critic decision: research_insufficient
+2025-10-09 05:57:15,458 - workflow - INFO - Executing researcher node
+2025-10-09 05:57:15,459 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:57:15,459 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:57:15,459 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:57:15,459 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:57:15,962 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:57:15,964 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:57:15,965 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:57:16,800 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:57:16,802 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:57:16,803 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:57:16,803 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:57:16,803 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:57:24,821 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:57:25,438 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:57:25,439 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:57:25,439 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:57:25,933 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:57:25,935 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:57:25,936 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:57:25,936 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:57:25,936 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:58:08,963 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:58:08,972 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 5 key findings
+2025-10-09 05:58:08,973 - workflow - INFO - Executing writer node
+2025-10-09 05:58:08,974 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 05:58:08,974 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:59:05,942 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:59:05,943 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (38521 characters)
+2025-10-09 05:59:05,944 - workflow - INFO - Executing critic node
+2025-10-09 05:59:05,944 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 05:59:05,944 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 05:59:28,801 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 05:59:28,801 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-10-09 05:59:28,803 - workflow - INFO - Making critic decision
+2025-10-09 05:59:28,803 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-10-09 05:59:28,803 - workflow - INFO - Critic decision: research_insufficient
+2025-10-09 05:59:28,803 - workflow - INFO - Executing researcher node
+2025-10-09 05:59:28,804 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 05:59:28,804 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks
+2025-10-09 05:59:28,804 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:59:28,804 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:59:29,316 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:59:29,318 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 05:59:29,319 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 05:59:30,084 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 05:59:30,085 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 05:59:30,085 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 05:59:30,085 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 05:59:30,085 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks
+2025-10-09 05:59:38,794 - data_sources.real_time_sources - ERROR - Error fetching GitHub trending: 422 Client Error: Unprocessable Entity for url: https://api.github.com/search/repositories?q=stars%3A%3E1000+created%3A%3Eweekly&sort=stars&order=desc&per_page=20
+2025-10-09 05:59:39,396 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 05:59:39,397 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks
+2025-10-09 05:59:39,397 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 05:59:39,900 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 05:59:39,902 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 05:59:39,902 - data_sources.real_time_sources - INFO - Fetched 14 real-time items
+2025-10-09 05:59:39,902 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 05:59:39,902 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 06:00:00,468 - __main__ - INFO - Research workflow interrupted by user
+2025-10-09 06:06:47,726 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 06:06:47,726 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-10-09 06:06:47,726 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 06:06:47,726 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-10-09 06:06:47,726 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-10-09 06:06:47,726 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-10-09 06:06:47,726 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-10-09 06:06:47,735 - workflow - INFO - Multi-agent research workflow initialized
+2025-10-09 06:06:47,747 - workflow - INFO - Executing planner node
+2025-10-09 06:06:47,747 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: transformer neural networks
+2025-10-09 06:06:47,747 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 06:07:01,154 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 06:07:01,155 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 5 main questions
+2025-10-09 06:07:01,156 - workflow - INFO - Executing researcher node
+2025-10-09 06:07:01,157 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: transformer neural networks
+2025-10-09 06:07:01,157 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: transformer neural networks (arxiv_offset: 0)
+2025-10-09 06:07:01,157 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks (offset: 0, max: 15)
+2025-10-09 06:07:01,157 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 06:07:01,795 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 06:07:01,797 - data_sources.cs_research_fetcher - INFO - Found 11 relevant ArXiv papers
+2025-10-09 06:07:01,797 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: transformer neural networks
+2025-10-09 06:07:02,631 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-10-09 06:07:02,632 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: transformer neural networks
+2025-10-09 06:07:02,633 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: transformer neural networks
+2025-10-09 06:07:02,633 - data_sources.cs_research_fetcher - INFO - Fetched 13 total items from 4 sources
+2025-10-09 06:07:02,633 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: transformer neural networks (github_page: 1, so_page: 1)
+2025-10-09 06:07:13,084 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-10-09 06:07:13,085 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: transformer neural networks (offset: 0, max: 5)
+2025-10-09 06:07:13,085 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3Atransformer+neural+networks&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-10-09 06:07:13,571 - arxiv - INFO - Got first page: 100 of 481732 total results
+2025-10-09 06:07:13,573 - data_sources.cs_research_fetcher - INFO - Found 4 relevant ArXiv papers
+2025-10-09 06:07:13,574 - data_sources.real_time_sources - INFO - Fetched 34 real-time items
+2025-10-09 06:07:13,574 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: transformer neural networks
+2025-10-09 06:07:13,575 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 06:07:41,761 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 06:07:41,761 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 5 key findings
+2025-10-09 06:07:41,762 - workflow - INFO - Executing writer node
+2025-10-09 06:07:41,762 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: transformer neural networks
+2025-10-09 06:07:41,762 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 06:08:38,754 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 06:08:38,755 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (35904 characters)
+2025-10-09 06:08:38,756 - workflow - INFO - Executing critic node
+2025-10-09 06:08:38,756 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: transformer neural networks
+2025-10-09 06:08:38,757 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-10-09 06:09:00,146 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-10-09 06:09:00,148 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: approved
+2025-10-09 06:09:00,148 - workflow - INFO - Making critic decision
+2025-10-09 06:09:00,149 - agents.critic_agent - INFO - Critic Agent workflow decision: approved
+2025-10-09 06:09:00,149 - workflow - INFO - Critic decision: approved
+2025-10-09 06:09:00,150 - workflow - INFO - Research workflow completed successfully
+2025-10-09 06:09:00,217 - __main__ - INFO - Report saved to: outputs/reports\report_transformer_neural_networks_20251009_060900.json

@@ -1,0 +1,12 @@
+langgraph==0.2.16
+langchain==0.2.11
+langchain-google-genai==1.0.6
+agent-swarm==0.2.7
+python-dotenv==1.0.0
+pydantic==2.7.1
+typing-extensions==4.11.0
+arxiv==2.1.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+feedparser==6.0.10
+pytz==2023.3

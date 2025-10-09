@@ -1,0 +1,42 @@
+[
+    {
+        "name": "gemini-2.5-flash",
+        "api_key": "GOOGLE_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 10000,
+        "priority": 1,
+        "description": "Fast and efficient model for quick responses"
+    },
+    {
+        "name": "gemini-2.5-pro",
+        "api_key": "GOOGLE_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 10000,
+        "priority": 2,
+        "description": "Most capable model for complex tasks"
+    },
+    {
+        "name": "gemini-2.0-flash",
+        "api_key": "GOOGLE_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 10000,
+        "priority": 3,
+        "description": "Balanced model for general use"
+    },
+    {
+        "name": "gemini-2.5-flash-lite",
+        "api_key": "GOOGLE_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 10000,
+        "priority": 4,
+        "description": "Lightweight model for simple tasks"
+    },
+    {
+        "name": "gemini-2.0-flash-lite",
+        "api_key": "GOOGLE_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 10000,
+        "priority": 5,
+        "description": "Ultra-lightweight model for basic tasks"
+    }
+]
