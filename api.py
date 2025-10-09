@@ -24,7 +24,7 @@ app = FastAPI(title="MARS Research Assistant API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","https://www.agilityaiinvoicely.com"],
+    allow_origins=["http://localhost:5173","*"],
     allow_origin_regex=r"^https?://localhost:\d{4}$",
     allow_credentials=True,
     allow_methods=["*"],
