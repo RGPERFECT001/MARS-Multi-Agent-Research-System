@@ -181,6 +181,38 @@ print(result['synthesized_data'])
 gemini_client.reset_all_models()
 ```
 
+## HTTP API (FastAPI)
+
+This repository includes a small FastAPI wrapper (`api.py`) which exposes endpoints useful for building a chatbot frontend.
+
+Run the server with uvicorn:
+
+```powershell
+python -m api
+# or
+uvicorn api:app --host 0.0.0.0 --port 8000
+```
+
+Endpoints:
+
+- POST /chat
+    - Body: {"session_id": "optional-session-id", "message": "your message"}
+    - Returns: {"session_id": "<id>", "reply": "assistant reply", "refusal": bool}
+
+- POST /research
+    - Body: {"session_id": "optional", "topic": "research topic", "stream": false}
+    - If stream=true the endpoint streams Server-Sent Events (SSE) with progress and final result.
+
+- GET /status
+    - Returns model status from the Gemini client.
+
+Example chat request (PowerShell/curl):
+
+```powershell
+curl -X POST "http://127.0.0.1:8000/chat" -H "Content-Type: application/json" -d '{"message":"transformer neural networks"}'
+```
+
+
 ## Output Structure
 
 The system generates comprehensive reports with the following structure:
