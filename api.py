@@ -5,8 +5,6 @@ Provides endpoints for a chatbot that acts as a research assistant using Gemini.
 - /research: start a research run using the existing workflow (can stream progress)
 - /status: model status
 
-Session-based history is kept in memory (simple dict). For production, replace with persistent store.
-
 Run with: python -m api or uvicorn api:app --host 0.0.0.0 --port 8000
 """
 
@@ -37,7 +35,8 @@ SESSIONS: Dict[str, List[Dict[str, str]]] = {}
 # System instruction: strictly act as a research assistant and refuse unrelated queries
 RESEARCH_SYSTEM_PROMPT = (
     "You are a specialized research assistant. Only answer queries that are explicitly about research tasks, collecting, summarizing, or analyzing information. "
-    "If the user's query is not related to research, respond with: 'I can only help with research-related requests.' and ask the user to rephrase as a research request. "
+    "If the user's query is not related to research, respond with reply like 'I can only help with research-related requests.' and ask the user to rephrase as a research request. "
+    "If user talks like 'hi' or 'hello' or 'how are you', respond with 'Hello! How can I assist you with your research today?' "
     "When asked to perform research, call the research workflow backend and return results when available. Keep answers concise and cite sources when available."
 )
 
