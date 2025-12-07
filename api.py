@@ -321,6 +321,16 @@ async def status():
 def root():
     return {"message": "MARS Research Assistant API is running."}
 
+#get all documents for user
+@app.get("/documents")
+async def list_documents():
+    documents = []
+    for filename in os.listdir(OUTPUTS_DIR):
+        if filename.endswith(".docx"):
+            documents.append(filename)
+    return documents
+
+
 # Simple uvicorn runner convenience
 if __name__ == "__main__":
     import uvicorn
