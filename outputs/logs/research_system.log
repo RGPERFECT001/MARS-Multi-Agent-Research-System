@@ -645,3 +645,202 @@ overall_assessment
 2025-10-09 06:09:00,149 - workflow - INFO - Critic decision: approved
 2025-10-09 06:09:00,150 - workflow - INFO - Research workflow completed successfully
 2025-10-09 06:09:00,217 - __main__ - INFO - Report saved to: outputs/reports\report_transformer_neural_networks_20251009_060900.json
+2025-12-07 15:16:39,523 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:16:39,524 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-12-07 15:16:39,524 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:16:39,525 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-12-07 15:16:39,525 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-12-07 15:16:39,525 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-12-07 15:16:39,525 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-12-07 15:16:39,535 - workflow - INFO - Multi-agent research workflow initialized
+2025-12-07 15:16:39,535 - workflow - INFO - Starting research workflow for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:39,537 - workflow - INFO - Executing planner node
+2025-12-07 15:16:39,537 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:39,537 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:16:51,816 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:16:51,816 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 4 main questions
+2025-12-07 15:16:51,818 - workflow - INFO - Executing researcher node
+2025-12-07 15:16:51,818 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:51,818 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: Artificial Intelligence Trends 2024 (arxiv_offset: 0)
+2025-12-07 15:16:51,819 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 15)
+2025-12-07 15:16:51,820 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:16:54,141 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:16:54,144 - data_sources.cs_research_fetcher - INFO - Found 13 relevant ArXiv papers
+2025-12-07 15:16:54,144 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:55,412 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-12-07 15:16:55,414 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:55,417 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:16:55,419 - data_sources.cs_research_fetcher - INFO - Fetched 15 total items from 4 sources
+2025-12-07 15:16:55,422 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: Artificial Intelligence Trends 2024 (github_page: 1, so_page: 1)
+2025-12-07 15:17:08,186 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:17:08,186 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 5)
+2025-12-07 15:17:08,187 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:17:09,112 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:17:09,115 - data_sources.cs_research_fetcher - INFO - Found 5 relevant ArXiv papers
+2025-12-07 15:17:09,116 - data_sources.real_time_sources - INFO - Fetched 22 real-time items
+2025-12-07 15:17:09,116 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:17:09,117 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:17:24,864 - __main__ - INFO - Research workflow interrupted by user
+2025-12-07 15:19:37,172 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:19:37,172 - agents.planner_agent - INFO - Initialized CS/IT Planner Agent
+2025-12-07 15:19:37,173 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:19:37,173 - data_sources.real_time_sources - INFO - Initialized Real-Time Data Sources with 10 RSS feeds
+2025-12-07 15:19:37,173 - agents.researcher_agent - INFO - Initialized CS/IT Researcher Agent
+2025-12-07 15:19:37,173 - agents.writer_agent - INFO - Initialized CS/IT Writer Agent
+2025-12-07 15:19:37,174 - agents.critic_agent - INFO - Initialized Critic Agent
+2025-12-07 15:19:37,183 - workflow - INFO - Multi-agent research workflow initialized
+2025-12-07 15:19:37,184 - workflow - INFO - Starting research workflow for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:37,187 - workflow - INFO - Executing planner node
+2025-12-07 15:19:37,187 - agents.planner_agent - INFO - CS/IT Planner Agent creating research plan for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:37,187 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:19:48,040 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:19:48,041 - agents.planner_agent - INFO - CS/IT Planner Agent successfully created research plan with 4 main questions
+2025-12-07 15:19:48,043 - workflow - INFO - Executing researcher node
+2025-12-07 15:19:48,043 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:48,044 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: Artificial Intelligence Trends 2024 (arxiv_offset: 0)
+2025-12-07 15:19:48,045 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 15)
+2025-12-07 15:19:48,046 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:19:49,267 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:19:49,271 - data_sources.cs_research_fetcher - INFO - Found 13 relevant ArXiv papers
+2025-12-07 15:19:49,272 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:50,554 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-12-07 15:19:50,556 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:50,556 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:19:50,557 - data_sources.cs_research_fetcher - INFO - Fetched 15 total items from 4 sources
+2025-12-07 15:19:50,557 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: Artificial Intelligence Trends 2024 (github_page: 1, so_page: 1)
+2025-12-07 15:20:02,981 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:20:02,981 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 5)
+2025-12-07 15:20:02,982 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:20:03,994 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:20:03,998 - data_sources.cs_research_fetcher - INFO - Found 5 relevant ArXiv papers
+2025-12-07 15:20:03,998 - data_sources.real_time_sources - INFO - Fetched 22 real-time items
+2025-12-07 15:20:03,999 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:20:03,999 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:20:31,358 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:20:31,359 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 4 key findings
+2025-12-07 15:20:31,360 - workflow - INFO - Executing writer node
+2025-12-07 15:20:31,360 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:20:31,361 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:21:10,781 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:21:10,782 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (33730 characters)
+2025-12-07 15:21:10,782 - workflow - INFO - Executing critic node
+2025-12-07 15:21:10,783 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:10,783 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:21:33,588 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:21:33,591 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-12-07 15:21:33,592 - workflow - INFO - Making critic decision
+2025-12-07 15:21:33,593 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-12-07 15:21:33,593 - workflow - INFO - Critic decision: research_insufficient
+2025-12-07 15:21:33,594 - workflow - INFO - Executing researcher node
+2025-12-07 15:21:33,594 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:33,594 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: Artificial Intelligence Trends 2024 (arxiv_offset: 13)
+2025-12-07 15:21:33,595 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 13, max: 15)
+2025-12-07 15:21:33,595 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:21:34,555 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:21:34,558 - data_sources.cs_research_fetcher - INFO - Found 2 relevant ArXiv papers
+2025-12-07 15:21:34,558 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:35,604 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-12-07 15:21:35,605 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:35,606 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:35,606 - data_sources.cs_research_fetcher - INFO - Fetched 4 total items from 4 sources
+2025-12-07 15:21:35,606 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: Artificial Intelligence Trends 2024 (github_page: 1, so_page: 1)
+2025-12-07 15:21:47,250 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:21:47,250 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 5)
+2025-12-07 15:21:47,250 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:21:48,213 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:21:48,216 - data_sources.cs_research_fetcher - INFO - Found 5 relevant ArXiv papers
+2025-12-07 15:21:48,216 - data_sources.real_time_sources - INFO - Fetched 22 real-time items
+2025-12-07 15:21:48,217 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:21:48,217 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:22:08,484 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:22:08,485 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 4 key findings
+2025-12-07 15:22:08,485 - workflow - INFO - Executing writer node
+2025-12-07 15:22:08,486 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:22:08,486 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:23:01,740 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:23:01,741 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (40395 characters)
+2025-12-07 15:23:01,742 - workflow - INFO - Executing critic node
+2025-12-07 15:23:01,743 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:01,743 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:23:20,398 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:23:20,398 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-12-07 15:23:20,399 - workflow - INFO - Making critic decision
+2025-12-07 15:23:20,399 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-12-07 15:23:20,400 - workflow - INFO - Critic decision: research_insufficient
+2025-12-07 15:23:20,400 - workflow - INFO - Executing researcher node
+2025-12-07 15:23:20,400 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:20,401 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: Artificial Intelligence Trends 2024 (arxiv_offset: 15)
+2025-12-07 15:23:20,401 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 15, max: 15)
+2025-12-07 15:23:20,401 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:23:21,522 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:23:21,524 - data_sources.cs_research_fetcher - INFO - Found 0 relevant ArXiv papers
+2025-12-07 15:23:21,525 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:22,649 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-12-07 15:23:22,651 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:22,651 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:22,652 - data_sources.cs_research_fetcher - INFO - Fetched 2 total items from 4 sources
+2025-12-07 15:23:22,652 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: Artificial Intelligence Trends 2024 (github_page: 2, so_page: 1)
+2025-12-07 15:23:33,535 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:23:33,536 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 5)
+2025-12-07 15:23:33,536 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:23:34,428 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:23:34,432 - data_sources.cs_research_fetcher - INFO - Found 5 relevant ArXiv papers
+2025-12-07 15:23:34,433 - data_sources.real_time_sources - INFO - Fetched 12 real-time items
+2025-12-07 15:23:34,433 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:34,434 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:23:44,574 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:23:44,575 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 3 key findings
+2025-12-07 15:23:44,576 - workflow - INFO - Executing writer node
+2025-12-07 15:23:44,576 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:23:44,576 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:24:17,626 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:24:17,626 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (19991 characters)
+2025-12-07 15:24:17,627 - workflow - INFO - Executing critic node
+2025-12-07 15:24:17,628 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:17,628 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:24:30,698 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:24:30,699 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: research_insufficient
+2025-12-07 15:24:30,700 - workflow - INFO - Making critic decision
+2025-12-07 15:24:30,700 - agents.critic_agent - INFO - Critic Agent workflow decision: research_insufficient
+2025-12-07 15:24:30,700 - workflow - INFO - Critic decision: research_insufficient
+2025-12-07 15:24:30,701 - workflow - INFO - Executing researcher node
+2025-12-07 15:24:30,702 - agents.researcher_agent - INFO - CS/IT Researcher Agent gathering CS/IT information for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:30,702 - data_sources.cs_research_fetcher - INFO - Fetching comprehensive data for CS/IT topic: Artificial Intelligence Trends 2024 (arxiv_offset: 15)
+2025-12-07 15:24:30,702 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 15, max: 15)
+2025-12-07 15:24:30,703 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:24:31,759 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:24:31,764 - data_sources.cs_research_fetcher - INFO - Found 0 relevant ArXiv papers
+2025-12-07 15:24:31,764 - data_sources.cs_research_fetcher - INFO - Fetching Hacker News posts for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:32,815 - data_sources.cs_research_fetcher - INFO - Found 0 relevant Hacker News posts
+2025-12-07 15:24:32,816 - data_sources.cs_research_fetcher - INFO - Fetching GitHub trending for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:32,817 - data_sources.cs_research_fetcher - INFO - Fetching recent news for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:32,817 - data_sources.cs_research_fetcher - INFO - Fetched 2 total items from 4 sources
+2025-12-07 15:24:32,817 - data_sources.real_time_sources - INFO - Fetching real-time data for topic: Artificial Intelligence Trends 2024 (github_page: 2, so_page: 1)
+2025-12-07 15:24:44,208 - data_sources.cs_research_fetcher - INFO - Initialized CS Research Fetcher with 41 ArXiv categories
+2025-12-07 15:24:44,208 - data_sources.cs_research_fetcher - INFO - Fetching ArXiv papers for topic: Artificial Intelligence Trends 2024 (offset: 0, max: 5)
+2025-12-07 15:24:44,209 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=all%3AArtificial+Intelligence+Trends+2024&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-12-07 15:24:45,140 - arxiv - INFO - Got first page: 100 of 467139 total results
+2025-12-07 15:24:45,144 - data_sources.cs_research_fetcher - INFO - Found 5 relevant ArXiv papers
+2025-12-07 15:24:45,145 - data_sources.real_time_sources - INFO - Fetched 12 real-time items
+2025-12-07 15:24:45,145 - agents.researcher_agent - INFO - CS/IT Researcher Agent synthesizing real data for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:45,146 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:24:55,261 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:24:55,261 - agents.researcher_agent - INFO - CS/IT Researcher Agent successfully synthesized real CS/IT data with 3 key findings
+2025-12-07 15:24:55,262 - workflow - INFO - Executing writer node
+2025-12-07 15:24:55,262 - agents.writer_agent - INFO - CS/IT Writer Agent writing report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:24:55,263 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:25:09,217 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:25:09,217 - agents.writer_agent - INFO - CS/IT Writer Agent successfully wrote report (5956 characters)
+2025-12-07 15:25:09,219 - workflow - INFO - Executing critic node
+2025-12-07 15:25:09,219 - agents.critic_agent - INFO - Critic Agent evaluating report for topic: Artificial Intelligence Trends 2024
+2025-12-07 15:25:09,219 - gemini_client - INFO - Using model: gemini-2.5-flash
+2025-12-07 15:25:20,407 - gemini_client - INFO - Successfully generated response using model: gemini-2.5-flash
+2025-12-07 15:25:20,407 - agents.critic_agent - INFO - Critic Agent completed evaluation with assessment: approved
+2025-12-07 15:25:20,408 - workflow - INFO - Making critic decision
+2025-12-07 15:25:20,408 - agents.critic_agent - INFO - Critic Agent workflow decision: approved
+2025-12-07 15:25:20,408 - workflow - INFO - Critic decision: approved
+2025-12-07 15:25:20,409 - workflow - INFO - Research workflow completed successfully
+2025-12-07 15:25:20,455 - __main__ - INFO - Report saved to: outputs/reports\report_Artificial_Intelligence_Trends_2024_20251207_152520.json
+2025-12-07 15:25:20,456 - agents.word_agent - INFO - Initialized Word Agent
+2025-12-07 15:25:20,457 - agents.word_agent - INFO - Word Agent converting report to Word document
+2025-12-07 15:25:20,670 - agents.word_agent - INFO - Report saved to outputs\Artificial_Intelligence_Trends_2024_report.docx

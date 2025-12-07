@@ -45,7 +45,7 @@ class MultiAgentResearchWorkflow:
         # Add edges for the main flow
         workflow.add_edge("planner", "researcher")
         workflow.add_edge("researcher", "writer")
-        workflow.add_edge("writer", "critic")
+        workflow.add_edge("writer", END)
         
         # Add conditional edges from critic
         workflow.add_conditional_edges(

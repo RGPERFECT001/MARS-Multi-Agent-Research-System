@@ -4,18 +4,23 @@ Provides endpoints for a chatbot that acts as a research assistant using Gemini.
 - /chat: conversational endpoint powered by Gemini; will refuse non-research queries
 - /research: start a research run using the existing workflow (can stream progress)
 - /status: model status
+- /download_report: download generated DOCX reports
 
 Run with: python -m api or uvicorn api:app --host 0.0.0.0 --port 8000
 """
 
 from fastapi import FastAPI, HTTPException, Request, BackgroundTasks
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, FileResponse
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 import uuid
 import time
 import json
+import os
+from types import SimpleNamespace
 from fastapi.middleware.cors import CORSMiddleware
+from agents import WordAgent  # <--- IMPORT ADDED
+
 # Lazy imports for heavy dependencies (done inside endpoints) to keep module import lightweight
 
 app = FastAPI(title="MARS Research Assistant API")
@@ -31,6 +36,11 @@ app.add_middleware(
 
 # In-memory session store: {session_id: [ {role: 'user'|'assistant'|'system', 'content': str}, ... ] }
 SESSIONS: Dict[str, List[Dict[str, str]]] = {}
+OUTPUTS_DIR = "outputs"  # Directory where WordAgent saves files
+
+# Ensure output directory exists
+if not os.path.exists(OUTPUTS_DIR):
+    os.makedirs(OUTPUTS_DIR)
 
 # System instruction: strictly act as a research assistant and refuse unrelated queries
 RESEARCH_SYSTEM_PROMPT = (
@@ -53,6 +63,7 @@ class ResearchRequest(BaseModel):
     session_id: Optional[str]
     topic: str
     stream: Optional[bool] = False
+    generate_docx: Optional[bool] = True  # <--- FIELD ADDED
 
 
 def ensure_session(session_id: Optional[str]) -> str:
@@ -135,6 +146,23 @@ def detect_research_intent(message: str, use_model_fallback: bool = True) -> boo
     except Exception:
         # If model call fails, default to False
         return False
+
+
+def generate_docx_for_result(result: dict) -> str:
+    """Helper to run WordAgent on a workflow result dictionary."""
+    try:
+        wa = WordAgent()
+        # Create a state proxy from the result dict
+        state_proxy = SimpleNamespace(
+            final_report=result.get('final_report'),
+            draft_report=result.get('draft_report'),
+            user_topic=result.get('user_topic', 'Research Report')
+        )
+        wa_output = wa.convert_to_word(state_proxy)
+        return wa_output.get("filename") # Return just the filename for the URL
+    except Exception as e:
+        print(f"Error generating DOCX: {e}")
+        return None
 
 
 @app.post("/chat")
@@ -223,8 +251,19 @@ async def research(req: ResearchRequest):
         last_yield = ""
 
         try:
-            # Start research with callback; the workflow likely runs synchronously, so we will simulate streaming
+            # Start research with callback
             result = workflow.run_with_callback(req.topic, callback)
+            
+            # --- DOCX Generation Logic for Stream ---
+            if req.generate_docx:
+                yield f"data: {json.dumps({'type': 'progress', 'message': 'Generating Word Document...'})}\n\n"
+                docx_filename = generate_docx_for_result(result)
+                if docx_filename:
+                    result['docx_filename'] = docx_filename
+                    result['download_url'] = f"/download_report/{docx_filename}"
+                    yield f"data: {json.dumps({'type': 'progress', 'message': f'Document ready: {docx_filename}'})}\n\n"
+            # ----------------------------------------
+
             # After completion, send final report
             payload = json.dumps({"type": "result", "result": result})
             yield f"data: {payload}\n\n"
@@ -238,11 +277,39 @@ async def research(req: ResearchRequest):
     # Non-streaming: run synchronously
     try:
         result = workflow.run(req.topic)
+        
+        # --- DOCX Generation Logic for Non-Stream ---
+        if req.generate_docx:
+            docx_filename = generate_docx_for_result(result)
+            if docx_filename:
+                result['docx_filename'] = docx_filename
+                result['download_url'] = f"/download_report/{docx_filename}"
+        # --------------------------------------------
+        
         # Save to session history as assistant message
         SESSIONS[session_id].append({"role": "assistant", "content": result.get('final_report', '')})
         return JSONResponse({"session_id": session_id, "result": result})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/download_report/{filename}")
+async def download_report(filename: str):
+    """Endpoint to retrieve the generated DOCX file."""
+    # Security check: ensure filename doesn't have directory traversal
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+        
+    file_path = os.path.join(OUTPUTS_DIR, filename)
+    
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+        
+    return FileResponse(
+        path=file_path, 
+        filename=filename, 
+        media_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    )
 
 
 @app.get("/status")

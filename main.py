@@ -5,10 +5,13 @@ import argparse
 import json
 import os
 from datetime import datetime
+from types import SimpleNamespace  # Used to mimic AgentState for WordAgent
+
 from workflow import MultiAgentResearchWorkflow
 from config import REPORTS_DIR, LOGS_DIR, CS_IT_DOMAIN_ONLY
 from gemini_client import gemini_client
 from data_sources import CSResearchFetcher
+from agents import WordAgent  # <--- IMPORT ADDED
 
 # Configure logging
 logging.basicConfig(
@@ -25,6 +28,9 @@ logger = logging.getLogger(__name__)
 
 def save_report(report_data: dict, topic: str) -> str:
     """Save the final report to a file."""
+    if not os.path.exists(REPORTS_DIR):
+        os.makedirs(REPORTS_DIR)
+        
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"report_{topic.replace(' ', '_')}_{timestamp}.json"
     filepath = os.path.join(REPORTS_DIR, filename)
@@ -118,6 +124,12 @@ def main():
         action="store_true",
         help="Reset all models to available status and exit"
     )
+    parser.add_argument(
+        "--docx",
+        "-d",
+        action="store_true",
+        help="Convert result to DOCX format automatically"
+    )
     
     args = parser.parse_args()
     
@@ -168,12 +180,34 @@ def main():
             print("\nStarting research workflow...")
             result = workflow.run(args.topic)
         
-        # Save the report
+        # Save the report (JSON)
         if args.output:
             output_path = args.output
         else:
             output_path = save_report(result, args.topic)
         
+        # --- WORD AGENT INTEGRATION START ---
+        docx_path = None
+        # Generate DOCX if requested OR if we have a valid report (auto-generate can be default or explicit)
+        if args.docx and result.get('final_report'):
+            print("\nGenerating Word Document...")
+            word_agent = WordAgent()
+            
+            # Create a simple state object compatible with WordAgent
+            state_proxy = SimpleNamespace(
+                final_report=result.get('final_report'),
+                draft_report=result.get('draft_report'),
+                user_topic=result.get('user_topic', args.topic)
+            )
+            
+            wa_result = word_agent.convert_to_word(state_proxy)
+            docx_path = wa_result.get("word_document_path")
+            
+            if docx_path:
+                print(f"📄 Word Document generated: {docx_path}")
+                result['word_document_path'] = docx_path
+        # --- WORD AGENT INTEGRATION END ---
+
         # Print summary
         print_report_summary(result)
         
@@ -181,9 +215,11 @@ def main():
         print_model_status()
         
         print(f"\nReport saved to: {output_path}")
+        if docx_path:
+            print(f"DOCX Report saved to: {docx_path}")
         
         # Print the full report if requested
-        if result.get('final_report') and not args.output:
+        if result.get('final_report') and not args.output and not args.docx:
             print("\n" + "="*80)
             print("FULL REPORT")
             print("="*80)
